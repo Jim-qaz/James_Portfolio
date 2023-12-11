@@ -649,4 +649,14 @@ footer p{
   font-size: 20px;
   text-align: center;
 }
+.opac{
+
+  background-color: #222;
+
+  border-radius: 20px;
+
+  opacity: 0.7;
+
+}
+
 
