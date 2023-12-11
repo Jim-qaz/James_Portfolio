@@ -41,7 +41,7 @@ nav ul li:hover::after{
 
     
       .banner {
-        background-image: url('/images/bannerBG.jpg');
+        background-image: url('bannerBG.jpg');
         background-size: cover;
       }
       .navbar-brand img{
