@@ -303,6 +303,7 @@ padding-bottom: 17px;
   color: white;
   text-align: center;
   padding-top: 25px;
+font-family: 'Ubuntu', sans-serif;	
 }
 .titleDark:hover{
     animation: widenGlow 2s;
@@ -375,6 +376,7 @@ padding-bottom: 17px;
   text-align: center;
   padding-top: 17px;
   padding-bottom: 15px;
+font-family: 'Ubuntu', sans-serif;
 }
 .title:hover {
   animation: widenGlow1 2s;
