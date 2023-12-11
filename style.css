@@ -1,0 +1,650 @@
+ @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Poppins:wght@500&display=swap');
+
+    body{
+      background-color: #191919;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+nav ul li{
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li:hover{
+  color: #fff;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff,
+    0 0 15px #fff;  
+}
+nav ul li:after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: silver;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+
+    
+      .banner {
+        background-image: url('/images/bannerBG.jpg');
+        background-size: cover;
+      }
+      .navbar-brand img{
+         height: 28px;
+      }
+      .bg-black{
+        background-color:black;
+      }
+      .banner-profile img{
+        border-radius: 50%;
+        height: 230px;
+        box-shadow:
+    0 0 3px #fff,
+     0 0 6px #fff,
+     0 0 9px #fff,
+     0 0 15px #fff,
+     0 0 24px #fff,
+     0 0 39px #fff,
+     0 0 63px #fff;
+        
+         /*0px 0px 23px rgba(255, 255, 255, 0.9);
+        border: 1px solid black;
+        /*bounce*/
+      	position: relative;
+      	text-align:center;
+      	-webkit-border-radius:50%;
+      	-moz-border-radius:50%;
+      	-ms-border-radius:50%;
+       	animation: bounce 2s infinite;
+      	-webkit-animation: bounce 2s infinite;
+      	-moz-animation: bounce 2s infinite;
+      	-o-animation: bounce 2s infinite;
+      }
+    @-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+    @-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+    @-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+    @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+      .aboutCont .name{
+        font-family: 'Philosopher', sans-serif;
+          color:#191919;
+          text-shadow:
+            0 0 3px #fff,
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 17px #fff;
+      }
+      .aboutCont{
+        padding: 20px, 20px, 20px, 20px;
+      }
+      .aboutCont p{
+        font-size: 12.5px;
+        font-family: 'Afacad', sans-serif;
+font-family: 'Poppins', sans-serif;
+      }
+      
+      .Htext {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.Htext span {
+  display: block;
+}
+.text1{
+  margin-top: 40px;
+  text-transform: Capitalize;
+  color: black;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+  position: relative;
+  animation: text 3s 1;
+  border-radius: 5px;
+    text-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff,
+    0 0 15px #fff,
+    0 0 24px #fff,
+    0 0 39px #fff,
+    0 0 63px #fff;
+}
+.text1:hover{
+  text-transform: Capitalize;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+  position: relative;
+  border-radius: 5px;
+   text-shadow:0;
+}
+
+.text2{
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff,
+    0 0 15px #fff,
+    0 0 24px #fff;
+  top: 50px;
+  padding-bottom: 35px;
+}
+
+.text2:hover{
+    animation: glow-infinite 5.5s infinite;
+}
+.btn1 a{
+  padding-bottom: -15px;
+}
+@keyframes text {
+  0% {
+     font-size: 30px;
+    background-color: black;
+    color: black;
+    margin-bottom: -40px;
+  }
+  24% {
+     font-size: 38px;
+     background-color: black;
+     color: white;
+    letter-spacing: 24px;
+    margin-bottom: -40px;
+  }
+   55% {
+      font-size: 36px;
+     background-color: black;
+     color: white;
+     letter-spacing: 20px;
+     margin-bottom: -40px;
+   }
+  75% {
+     font-size: 34px;
+    background-color: black;
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+    98% {
+       font-size: 33px;
+      background-color: white;
+      color: black;
+      letter-spacing: 4px;
+      margin-bottom: -40px;
+    }
+}
+@keyframes glow-infinite{
+ 25% {
+    text-transform: uppercase;
+    font-size: 33px;
+    font-family: 'Poppins',
+      sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #000,
+      0 0 9px #000,
+        0 0 14px #000,
+        0 0 23px #000,
+        0 0 37px #000,
+        0 0 60px #000,
+        0 0 97px #000,
+        0 0 157px #000;
+  }
+  50%{ 
+     text-transform: capitalize;
+    font-size: 33px;
+     font-family: 'Poppins',
+     sans-serif;
+     color: #000;
+     text-shadow: 0 0 3px #fff,
+     0 0 6px #fff,
+     0 0 9px #fff,
+     0 0 15px #fff,
+     0 0 24px #fff,
+     0 0 39px #fff,
+     0 0 63px #fff,
+     0 0 112px #fff;}
+  75%{
+       text-transform: uppercase;
+       font-size: 33px;
+       font-family: 'Poppins',
+       sans-serif;
+       color: #fff;
+       text-shadow: 0 0 5px #000,
+       0 0 9px #000,
+       0 0 14px #000,
+       0 0 23px #000,
+       0 0 37px #000,
+       0 0 60px #000,
+       0 0 97px #000,
+       0 0 157px #000;
+     }
+   100%{ 
+         text-transform: capitalize;
+        font-size: 33px;
+     font-family: 'Poppins',
+     sans-serif;
+     color: #000;
+     text-shadow: 0 0 3px #fff,
+     0 0 6px #fff,
+     0 0 9px #fff,
+     0 0 15px #fff,
+     0 0 24px #fff,
+     0 0 39px #fff,
+     0 0 63px #fff,
+     0 0 112px #fff;}
+}   
+
+.about{
+  background-color: #191919;
+  
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-radius: 30px;
+}
+.myPic img{
+  height: 300px;
+  border-radius: 50%;
+}
+.col-lg-7 {
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  padding-top: 40px;
+}
+.max-width {
+  max-width: 100%;
+}
+.title-about{
+padding-top: 30px;
+padding-bottom: 17px;
+}
+.titleDark{
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+.titleDark:hover{
+    animation: widenGlow 2s;
+} 
+ 
+@keyframes widenGlow{
+    35%{
+      letter-spacing: 25px;
+      color: black;
+   text-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff,
+    0 0 15px #fff,
+    0 0 24px #fff;
+    } 
+     70% {
+       letter-spacing: 10px;
+       color: black;
+       text-shadow:
+         0 0 3px #fff,
+         0 0 6px #fff,
+         0 0 9px #fff,
+         0 0 15px #fff,
+         0 0 24px #fff;
+     }
+        100% {
+          letter-spacing: 10px;
+          color: black;
+          text-shadow:
+            0 0 3px #fff,
+            0 0 6px #fff,
+            0 0 9px #fff,
+            0 0 15px #fff,
+            0 0 24px #fff;
+          letter-spacing: 4px;
+        }
+}
+.typing{
+   text-shadow:
+            0 0 3px #fff,
+            0 0 6px #fff,
+            0 0 9px #fff;
+}
+
+
+
+
+/* services section styling */
+.services, .serv-content{
+       padding: 20px; 
+       background-color: whitesmoke;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+.services h1{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+ .services p{
+  font-size: 12.5px;
+  font-family: 'Afacad', sans-serif;
+  font-family: 'Poppins', sans-serif;
+ }
+ 
+ /*title*/
+ .title{
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.title:hover {
+  animation: widenGlow1 2s;
+}
+@keyframes widenGlow1{
+    35%{
+      letter-spacing: 20px;
+      color: white;
+   text-shadow:
+    0 0 3px #000,
+    0 0 6px #000,
+    0 0 9px #000,
+    0 0 15px #000,
+    0 0 24px #000;
+    } 
+     70% {
+       letter-spacing: 10px;
+    color: white;
+   text-shadow:
+    0 0 3px #000,
+    0 0 6px #000,
+    0 0 9px #000,
+    0 0 15px #000,
+    0 0 24px #000;
+     }
+        100% {
+          letter-spacing: 10px;
+    color: white;
+   text-shadow:
+    0 0 3px #000,
+    0 0 6px #000,
+    0 0 9px #000,
+    0 0 15px #000,
+    0 0 24px #000;
+          letter-spacing: 4px;
+        }
+}
+
+.box{
+  border: 5px solid white;
+  background-color: #191919;
+  color: white;
+  
+  font-size: 13px;
+  border-radius: 25px;
+  height: 350px;
+   text-align: center;
+   padding: 13px;
+}
+
+.box:hover{
+  background-color: #F0F3F4;
+  color:#191919;
+}
+.col-md-6 i{
+  font-size: 44px;
+}
+.box i {
+  padding-top: 15px;
+  padding-bottom: 8px;
+  font-size: 40px;
+}
+.works{
+  margin-bottom: 43px;
+}
+.works h1{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.carousel{
+  margin-left: 5%;
+  width: 90%;
+}
+
+.carousel-inner img{ 
+  border-radius: 46px;
+  margin-bottom: 15px;
+}
+
+/* skills section styling */
+
+.skills{
+
+     padding: 29px;
+     background-color: #ECF0F1;
+     height: 460px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+} 
+
+.skills p{
+  font-size: 12.5px;
+  font-family: 'Afacad', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.skillBar p{
+  position: relative;
+  text-align: left;
+  color: black;
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
+.skillBar .html{
+  background-color: black;
+  color: #F0F3F4;
+  font-size: 9px;
+  height: 13px;
+  border-radius: 10px 10px 10px 10px;
+  width: 61%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 4px;
+}
+
+.skillBar .bg-bar{
+  background-color: lightgray;
+  height: 13px;
+  border-radius: 9px 9px 9px 9px;
+  width: 324px;
+}
+
+.skillBar .css{
+  background-color: black;
+  color: #F0F3F4;
+  font-size: 9px;
+  height: 13px;
+  border-radius: 10px 10px 10px 10px;
+  width: 43%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 4px;
+}
+
+.skillBar .js{
+
+  background-color: black;
+
+  color: #F0F3F4;
+  font-size: 9px;
+  height: 13px;
+  border-radius: 10px 10px 10px 10px;
+  width: 9%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 4px;
+}
+
+.skillBar .bs{
+
+  background-color: black;
+
+  color: #F0F3F4;
+  font-size: 9px;
+  height: 13px;
+  border-radius: 10px 10px 10px 10px;
+  width: 21%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 4px;
+}
+
+.skillBar .cpp{
+  background-color: black;
+
+  color: #F0F3F4;
+  font-size: 9px;
+  height: 13px;
+  border-radius: 10px 10px 10px 10px;
+  width: 24%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 4px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form{
+
+  max-width:420px;
+  margin:50px auto;
+  }
+
+.feedback-input{
+  color: #ddd;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 7px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #909089;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 94%;
+  box-sizing: border-box;
+  outline:0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.feedback-input:focus{
+  border:2px solid #eee; 
+}
+.feedback-input:hover {
+  border: 2px solid #eee;
+  color: #fff;
+  box-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.submit{
+  font-family: 'Ubuntu', sans-serif;
+  width: 94%;
+  background: #eee;
+  border-radius:7px;
+  border:0;
+  cursor:pointer;
+  color: #111;
+  font-size:21px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+.submit:hover { 
+  background: #000;
+  color: #fff;
+ text-shadow:
+    0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff;
+}
+
+.icons{
+  text-align: center;
+}
+.icons a{
+  font-size: 30px;
+  color: #eee;
+}
+
+footer p{
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
